@@ -1,13 +1,12 @@
 [package]
 name = "openvr_bindings"
-version = "2.2.3"
+version = "2.1.0"
 authors = [
     "Colin Sherratt",
     "Erick Tryzelaar",
     "Rene Eichhorn",
     "Benjamin Saunders",
     "Kaitlyn Wimer"
-    
 ]
 license = "MIT"
 description = "Raw unsafe system binding for openvr"
