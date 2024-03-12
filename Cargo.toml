@@ -31,7 +31,7 @@ cmake = "0.1"
 bindgen = { version = "0.69", optional = true }
 
 [lib]
-name = "openvr_sys"
+name = "openvr-bindings"
 path = "lib.rs"
 
 [features]
