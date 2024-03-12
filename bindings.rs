@@ -6497,7 +6497,8 @@ fn bindgen_test_layout_RenderModel_Vertex_t() {
         )
     );
 }
-#[repr(C, packed(4))]
+#[repr(C)]
+#[cfg_attr(unix, repr(packed(4)))]
 #[derive(Debug, Copy, Clone)]
 pub struct RenderModel_TextureMap_t {
     pub unWidth: u16,
@@ -6572,7 +6573,8 @@ fn bindgen_test_layout_RenderModel_TextureMap_t() {
         )
     );
 }
-#[repr(C, packed(4))]
+#[repr(C)]
+#[cfg_attr(unix, repr(packed(4)))]
 #[derive(Debug, Copy, Clone)]
 pub struct RenderModel_t {
     pub rVertexData: *mut RenderModel_Vertex_t,
@@ -8348,7 +8350,8 @@ fn bindgen_test_layout_VREvent_Data_t() {
     );
 }
 #[doc = " An event posted by the server to all running applications"]
-#[repr(C, packed(4))]
+#[repr(C)]
+#[cfg_attr(unix, repr(packed(4)))]
 #[derive(Copy, Clone)]
 pub struct VREvent_t {
     pub eventType: u32,
