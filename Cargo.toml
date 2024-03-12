@@ -1,5 +1,5 @@
 [package]
-name = "openvr-bindings"
+name = "openvr_bindings"
 version = "2.2.3"
 authors = [
     "Colin Sherratt",
@@ -31,7 +31,7 @@ cmake = "0.1"
 bindgen = { version = "0.69", optional = true }
 
 [lib]
-name = "openvr-bindings"
+name = "openvr_bindings"
 path = "lib.rs"
 
 [features]
