@@ -1,6 +1,7 @@
 [package]
 name = "openvr_bindings"
 version = "2.1.0"
+edition = "2021"
 authors = [
     "Colin Sherratt",
     "Erick Tryzelaar",
@@ -9,7 +10,8 @@ authors = [
     "Kaitlyn Wimer"
 ]
 license = "MIT"
-description = "Raw unsafe system binding for openvr"
+readme = "README.md"
+description = "Unsafe bindings for the OpenVR API. Forked version of https://github.com/rust-openvr/rust-openvr with updated support for newer OpenVR API."
 repository = "https://github.com/kaitlynkittyy/openvr-bindings-rs"
 keywords = ["vr", "vive", "steamvr", "openvr"]
 categories = [ "hardware-support", "external-ffi-bindings" ]
