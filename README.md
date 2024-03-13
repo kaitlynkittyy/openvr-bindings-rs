@@ -1,6 +1,6 @@
 # openvr-bindings-rs
 
-Contains function definitions for the [OpenVR](https://github.com/ValveSoftware/openvr) library. Use the `openvr-rs` crate, unless you know what you are doing.
+Contains function definitions for the [OpenVR](https://github.com/ValveSoftware/openvr) library. Use the `openvr-rs` (not yet created) crate, unless you know what you are doing.
 
 ## Instructions for updating OpenVR
 
