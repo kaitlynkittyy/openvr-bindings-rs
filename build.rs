@@ -3,8 +3,15 @@ extern crate bindgen;
 extern crate cmake;
 
 use std::env;
+use std::path::Path;
+use std::process::Command;
 
 fn main() {
+    if !Path::new("openvr/src").exists() {
+        let _ = Command::new("git")
+            .args(&["submodule", "update", "--init"])
+            .status();
+    }
     let mut config = cmake::Config::new("openvr");
     let target_os = env::var("CARGO_CFG_TARGET_OS").unwrap();
     let target_pointer_width = env::var("CARGO_CFG_TARGET_POINTER_WIDTH").unwrap();

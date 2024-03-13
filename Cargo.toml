@@ -29,6 +29,7 @@ maintenance = { status = "passively-maintained" }
 
 [build-dependencies]
 cmake = "0.1"
+#openvr = { git = "https://github.com/ValveSoftware/openvr.git" }
 bindgen = { version = "0.69", optional = true }
 
 [lib]
