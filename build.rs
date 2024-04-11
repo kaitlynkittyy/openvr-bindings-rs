@@ -50,4 +50,13 @@ fn main() {
         .expect("could not generate bindings")
         .write_to_file("bindings.rs")
         .expect("could not write bindings.rs");
+
+    if env::var("DOCS_RS").unwrap_or_else(|_| "0".to_string()) == "0" {
+        let dst = cmake::Config::new("openvr-bindings-rs")
+            .define("BUILD_SHARED_LIBS", "OFF")
+            .profile("Release")
+            .build();
+        println!("cargo:rustc-link-search-native{}/build", dst.display());
+    }
+
 }
